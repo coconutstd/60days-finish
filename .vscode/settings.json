@@ -1,0 +1,30 @@
+{
+  "python.pythonPath": "/usr/bin/python3",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Night Owl",
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "explorer.confirmDelete": false,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.alwaysShowStatus": true,
+  "eslint.workingDirectories": [
+    {
+      "mode": "auto"
+    }
+  ],
+  "eslint.validate": ["javascript", "typescript"],
+  "liveSassCompile.settings.excludeList": ["**/node_modules/**", ".vscode/**"],
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "./네이버주문/assets/css/"
+    }
+  ],
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
