@@ -489,7 +489,7 @@ textarea::-webkit-outer-spin-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 8px;
+  margin-top: 16px;
   padding: 18px 0;
   border-radius: 2px;
   background-color: #fff;
@@ -563,7 +563,7 @@ textarea::-webkit-outer-spin-button {
   padding: 0 5px;
   border-radius: 10px;
   line-height: 16px;
-  font-size: 16px;
+  font-size: 11px;
   font-weight: 700;
   background-color: #ff61a7;
   color: #fff;
@@ -579,6 +579,9 @@ textarea::-webkit-outer-spin-button {
   position: absolute;
   bottom: 0;
   right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding: 6px;
   border: 1px solid #e5e5e5;
   border-radius: 100%;
@@ -606,6 +609,84 @@ textarea::-webkit-outer-spin-button {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+}
+
+.menu-category-area {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 94px;
+  margin-top: 10px;
+  background-color: #fff;
+  z-index: 5500;
+}
+
+.menu-category-area .common-inner {
+  position: relative;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.menu-category-area .common-inner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(35%, #fff), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(to right, #fff 35%, rgba(255, 255, 255, 0));
+  pointer-events: none;
+  z-index: 1;
+}
+
+.menu-category-area .common-inner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 18px;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(65%, #fff));
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), #fff 65%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.menu-category-area .category-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 54px;
+}
+
+.menu-category-area .category-item:first-child {
+  padding-left: 18px;
+}
+
+.menu-category-area .category-item:last-child {
+  padding-right: 18px;
+}
+
+.menu-category-area .category-tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 12px;
+  font-size: 16px;
+  height: 30px;
+  border-radius: 15px;
+  color: #333;
+}
+
+.menu-category-area .category-tab.is-active {
+  background-color: #424242;
+  font-weight: 700;
+  color: #fff;
 }
 
 .container {

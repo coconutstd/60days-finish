@@ -1,6 +1,6 @@
 .recent-order-area {
   display: flex;
-  margin-top: 8px;
+  margin-top: 16px;
   padding: 18px 0;
   border-radius: 2px;
   background-color: #fff;
@@ -17,7 +17,6 @@
     font-size: 12px;
     font-weight: 700;
     color: $booking-color-text6;
-
     .ico-clock {
       margin-bottom: 4px;
       width: 14px;
@@ -33,12 +32,10 @@
     padding-left: 16px;
     width: 80px;
     text-align: center;
-
     &.is-ordered {
       padding-right: 16px;
       border-right: 1px solid $booking-color-bg102;
     }
-
     &:last-child {
       padding-right: $m-padding;
     }
@@ -60,7 +57,7 @@
     padding: 0 5px;
     border-radius: 10px;
     line-height: 16px;
-    font-size: 16px;
+    font-size: 11px;
     font-weight: 700;
     background-color: #ff61a7;
     color: #fff;
@@ -76,6 +73,7 @@
     position: absolute;
     bottom: 0;
     right: 0;
+    display: flex;
     padding: 6px;
     border: 1px solid $booking-color-border150;
     border-radius: 100%;
@@ -91,13 +89,13 @@
     margin-top: 8px;
     font-weight: 600;
     font-size: 14px;
-    @include ellipsis;
+    @include ellipse;
   }
 
   .menu-price {
     font-size: 13px;
     font-weight: 700;
     color: $point-color;
-    @include ellipsis;
+    @include ellipse;
   }
 }
