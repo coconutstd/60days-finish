@@ -767,6 +767,7 @@ textarea::-webkit-outer-spin-button {
 
 .container {
   padding-top: 94px;
+  background-color: #f4f7f9;
 }
 
 .common-inner {
