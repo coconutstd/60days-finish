@@ -79,5 +79,74 @@
       text-align: center;
       color: #fff;
     }
+    &.disabled {
+      font-size: 12px;
+      border: 0;
+      background-color: #eee;
+      color: #777;
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+  }
+}
+
+.menu-name-group {
+  display: flex;
+  align-items: center;
+
+  .menu-name {
+    font-size: 17px;
+    line-height: 22px;
+    font-weight: 700;
+    color: $booking-color-text6;
+  }
+
+  .ico-new {
+    margin-left: 4px;
+  }
+
+  .badge-popular {
+    margin-left: 6px;
+  }
+}
+
+.menu-info-group {
+  display: flex;
+  flex-shrink: 0;
+  margin-top: 4px;
+  font-size: 14px;
+
+  .menu-grade {
+    flex-shrink: 0;
+    font-weight: 700;
+    color: $booking-color-text6;
+
+    .ico-star {
+      margin-right: 2px;
+    }
+
+    & + .menu-number-of-order {
+      &::before {
+        content: "";
+        display: inline-block;
+        width: 1px;
+        height: 12px;
+        margin: 0 8px;
+        background-color: $booking-color-bg168;
+        transform: translateY(1px);
+      }
+    }
+  }
+
+  .menu-number-of-order {
+    flex-shrink: 0;
+    color: $booking-color-text5;
+
+    em {
+      margin-left: 4px;
+      font-style: normal;
+      font-weight: 700;
+      color: $booking-color-text6;
+    }
   }
 }
