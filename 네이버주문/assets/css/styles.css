@@ -202,6 +202,59 @@ textarea::-webkit-outer-spin-button {
   display: none;
 }
 
+.go-to-top {
+  padding: 16px 0 32px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.go-to-top .link {
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 20px;
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  color: #666;
+  -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.04);
+          box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.04);
+  text-transform: uppercase;
+}
+
+.go-to-top .ico-up {
+  position: relative;
+  display: inline-block;
+  margin-left: 4px;
+  width: 10px;
+  height: 10px;
+}
+
+.go-to-top .ico-up::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  border-top: 2px solid #666;
+  border-left: 2px solid #666;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.go-to-top .ico-up::after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 50%;
+  width: 2px;
+  height: 9px;
+  background-color: #666;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
 .header-area {
   position: fixed;
   top: 0px;
@@ -483,6 +536,91 @@ textarea::-webkit-outer-spin-button {
 
 .info-main-notice .ico-clock {
   margin-right: 6px;
+}
+
+.order-box-area {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  border-top: 1px solid #e8e8e8;
+  -webkit-box-shadow: 0 0 6px 4px rgba(0, 0, 0, 0.03);
+          box-shadow: 0 0 6px 4px rgba(0, 0, 0, 0.03);
+  background-color: #fff;
+  z-index: 9100;
+}
+
+.order-box-area .common-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 12px 18px;
+}
+
+.order-box-area .menu-name {
+  font-size: 15px;
+  color: #333;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.order-box-area .menu-price {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ff3d3b;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.order-box-area .btn-order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 128px;
+  height: 46px;
+  border-radius: 5px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#01d760), to(#0ad18e));
+  background-image: linear-gradient(to right, #01d760, #0ad18e);
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  color: #fff;
+}
+
+.order-box-area .icon {
+  position: relative;
+  margin-left: 6px;
+}
+
+.order-box-area .ico-cart {
+  width: 20px;
+  height: 20px;
+}
+
+.order-box-area .num {
+  position: absolute;
+  top: -5px;
+  right: -4px;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  border-radius: 50%;
+  background-color: #ff3d3b;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
 }
 
 .recent-order-area {
@@ -955,6 +1093,7 @@ textarea::-webkit-outer-spin-button {
 
 .container {
   padding-top: 94px;
+  padding-bottom: 70px;
   background-color: #f4f7f9;
 }
 
