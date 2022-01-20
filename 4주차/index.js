@@ -40,31 +40,18 @@ function init() {
       }
 
       if (operator === "=") {
+        if (right === null || op === "") return;
         result.innerText = calculate(left, right, op);
         left = result.innerText;
       } else {
         if (op === "" && left === 0) {
           op = operator;
-          if (op === "+" || op === "÷") {
-            left = result.innerText;
-            opClicked = true;
-            return;
-          }
-          if (op === "-") {
-            left = result.innerText;
-            op = operator;
-            opClicked = true;
-            return;
-          }
-          if (op === "×") {
-            left = result.innerText;
-            opClicked = true;
-            return;
-          }
+          left = result.innerText;
+        } else {
+          left = calculate(left, right, op);
+          op = operator;
+          result.innerText = left;
         }
-        left = calculate(left, right, op);
-        op = operator;
-        result.innerText = left;
       }
       console.log(left, right, op);
       opClicked = true;
@@ -73,8 +60,8 @@ function init() {
 }
 
 function calculate(left, right, op) {
-  left = parseInt(left);
-  right = parseInt(right);
+  left = parseFloat(left);
+  right = parseFloat(right);
   switch (op) {
     case "+":
       return left + right;
