@@ -1,0 +1,46 @@
+.header-container {
+  width: 88px;
+  height: 100%;
+  border-right: 0.0000005em solid white;
+  
+
+  .header-inner {
+    position: fixed;
+    top: 0px;
+    left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    .nav-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+      .nav-item {
+        display: inline-block;
+        margin-top: 30px;
+        
+        a {
+          display: flex;
+        }
+      }
+    }
+
+    .nav i {
+      color: white;
+      font-size: 1.75rem;
+    }
+  }
+
+  .me {
+    display: inline-block;
+    margin-top: 10px;
+    text-align: center;
+    img{
+      border-radius: 50%;
+    }
+  }
+
+}

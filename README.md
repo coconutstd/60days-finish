@@ -12,6 +12,7 @@
 
 - SCSS 구조화
 - 몰랐던 CSS 속성들 vertical-align, align-self
+
   <img width="300px" alt="네이버 주문 페이지2" src="https://user-images.githubusercontent.com/25981278/148684328-df6fedf8-f4ba-4a55-81a7-01927e8600df.png">
 
 ## 3주차
