@@ -57,11 +57,14 @@ function renderLanguageChart(dataTable) {
 function renderRepoList(repos) {
   repos.json().then((repo) => {
     repo.forEach((r) => {
+      fetchRepoLanguage(USER_NAME, r.name).then((response) => {
+        console.log(response);
+      });
       const html = document.createElement("div");
       html.classList.add("repository");
       html.innerHTML = `
       <span class="title">${r.name}</span>
-      <span class="public">${r.visibility}</span>
+      <span class="${r.visibility}">${r.visibility}</span>
     `;
       $(".repositories .wrapper").appendChild(html);
     });
