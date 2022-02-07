@@ -1,11 +1,21 @@
 import { BODIES, HAIRS } from "../data.js";
 
 export default class Person {
-  constructor(hairIndex, bodyIndex) {}
+  #hairIndex = null;
+  #bodyIndex = null;
 
-  changeHair(index) {}
+  constructor(hairIndex = 0, bodyIndex = 0) {
+    this.#hairIndex = hairIndex;
+    this.#bodyIndex = bodyIndex;
+  }
 
-  changeBody(index) {}
+  changeHair(index) {
+    this.#hairIndex = index;
+  }
+
+  changeBody(index) {
+    this.#bodyIndex = index;
+  }
 
   get hair() {
     return HAIRS[this.#hairIndex];

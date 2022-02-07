@@ -35,12 +35,12 @@ $abilitySelect.addEventListener("change", (event) => {
   renderCharacter();
 });
 
-$jobActionButton.addEventListener('click', () => {
+$jobActionButton.addEventListener("click", () => {
   character.showOff();
-})
-$abilityActionButton.addEventListener('click', () => {
+});
+$abilityActionButton.addEventListener("click", () => {
   character.showSkill();
-})
+});
 
 function getCharacterImage(hair, body) {
   return `images/hair-${hair}_body-${body}.png`;

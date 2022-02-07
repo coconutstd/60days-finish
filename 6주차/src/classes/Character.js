@@ -1,12 +1,23 @@
 import { ABILITY, JOB } from "../data.js";
 import Person from "./Person.js";
 
-export default class Character {
-  constructor({ job, ability, hair, body }) {}
+export default class Character extends Person {
+  job = "";
+  ability = "";
 
-  changeJob(job) {}
+  constructor({ job, ability, hair, body }) {
+    super(arguments[0].hair, arguments[0].body);
+    this.job = arguments[0].job;
+    this.ability = arguments[0].ability;
+  }
 
-  changeAbility(ability) {}
+  changeJob(job) {
+    this.job = job;
+  }
+
+  changeAbility(ability) {
+    this.ability = ability;
+  }
 
   get introduction() {
     return `
