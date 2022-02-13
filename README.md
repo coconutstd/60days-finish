@@ -27,3 +27,10 @@
 - AC 버튼 클릭시 .result 0으로 초기화
 
 <img width="300px" alt="계산기" src="https://user-images.githubusercontent.com/25981278/150117721-f8755562-434b-40dd-b148-72d8bb2e7334.png">
+
+## 6주차
+
+- 캐릭터 커스터마이징
+- 자바스크립트의 클래스 생성 방법
+
+<img width="300px" alt="클래스" src="https://user-images.githubusercontent.com/25981278/153758868-48977b9d-e861-46eb-88c2-e8ee407b3f72.png">
