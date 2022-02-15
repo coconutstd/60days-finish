@@ -1,0 +1,21 @@
+.toast-container {
+  position: fixed;
+  bottom: 50px;
+  width: 100%;
+}
+
+.toast {
+  opacity: 0;
+  width: 300px;
+  background-color: #fc7979;
+  color: white;
+  padding: 16px 20px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin: 10px 0;
+  font-weight: 700;
+}
+
+.toast.show {
+  opacity: 1;
+}
