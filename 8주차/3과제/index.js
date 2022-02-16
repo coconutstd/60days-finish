@@ -48,12 +48,16 @@
       const paint = $canvas.getBoundingClientRect();
       return {
         x: event.clientX - paint.left,
-        y: event.clientY - paint.top
+        y: event.clientY - paint.top,
       };
     }
 
     // 1번 문제
-    setPen(size) {}
+    setPen(size) {
+      this.pen.previousElementSibling.innerHTML = `크기(${size})`;
+      this.pen.value = size;
+      this.size = size;
+    }
 
     // 2번 문제
     mouseDownHandler($canvas, event) {
@@ -62,6 +66,7 @@
       this.ctx.beginPath();
       this.ctx.strokeStyle = this.color;
       this.ctx.lineWidth = this.size;
+      this.ctx.moveTo(currentPosition.x, currentPosition.y);
       // 작성하세요
     }
 
@@ -70,16 +75,20 @@
       if (!this.mouseDown) return;
       const currentPosition = this.getMouse($canvas, event);
       // 작성하세요.
-
+      this.ctx.lineTo(currentPosition.x, currentPosition.y);
       // 끝
       this.ctx.stroke();
     }
 
     // 4번 문제
-    mouseUpHandler() {}
+    mouseUpHandler() {
+      this.mouseDown = false;
+    }
 
     // 5번 문제
-    setErager() {}
+    setErager() {
+      this.color = "#fff";
+    }
 
     // 6번 문제
     setReset() {
@@ -87,6 +96,7 @@
       this.setPen(7);
       this.color = "#000";
       // 작성하세요
+      this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
     }
   }
 
