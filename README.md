@@ -28,6 +28,12 @@
 
 <img width="300px" alt="계산기" src="https://user-images.githubusercontent.com/25981278/150117721-f8755562-434b-40dd-b148-72d8bb2e7334.png">
 
+## 5주차
+
+- fetch 문법을 사용해서 Github API와 연동하기
+
+<img width="300px" alt="메인" src="https://user-images.githubusercontent.com/25981278/154690776-8648a5db-197d-4919-abdc-42471ddea358.png">
+
 ## 6주차
 
 - 캐릭터 커스터마이징
