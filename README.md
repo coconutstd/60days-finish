@@ -40,3 +40,16 @@
 - 자바스크립트의 클래스 생성 방법
 
 <img width="300px" alt="클래스" src="https://user-images.githubusercontent.com/25981278/153758868-48977b9d-e861-46eb-88c2-e8ee407b3f72.png">
+
+## 7주차
+
+- Javascript로 DOM 엘리먼트 렌더링 구현
+- 마우스 스크롤 이벤트에 반응하는 파노라마 이미지
+
+<img width="300px" alt="렌더링" src="https://user-images.githubusercontent.com/25981278/155126698-1ca04506-18ac-4378-bf88-9cd936d44561.png">
+
+<img width="300px" alt="1" src="https://user-images.githubusercontent.com/25981278/155126906-bf88cdb3-ebcc-49d9-8a14-8cba2fdaaf80.png">
+
+<img width="300px" alt="2" src="https://user-images.githubusercontent.com/25981278/155126932-b9e158be-d97f-47a4-8bc5-17581ce317a4.png">
+
+<img width="300px" alt="3" src="https://user-images.githubusercontent.com/25981278/155126935-acb406f4-28e4-48e0-8e40-e15eb50152f4.png">
