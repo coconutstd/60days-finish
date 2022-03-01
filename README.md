@@ -53,3 +53,11 @@
 <img width="300px" alt="2" src="https://user-images.githubusercontent.com/25981278/155126932-b9e158be-d97f-47a4-8bc5-17581ce317a4.png">
 
 <img width="300px" alt="3" src="https://user-images.githubusercontent.com/25981278/155126935-acb406f4-28e4-48e0-8e40-e15eb50152f4.png">
+
+## 8주차
+
+- 카드 뒤집기, 퀴즈 게임
+
+<img width="300px" alt="카드뒤집기" src="https://user-images.githubusercontent.com/25981278/156190918-bed7a30e-a50e-489b-9b08-58f0f2048fbd.png">
+
+<img width="300px" alt="퀴즈게임" src="https://user-images.githubusercontent.com/25981278/156190945-a95ce391-773e-4f63-8c6e-267999854a4e.png">
