@@ -56,6 +56,14 @@
 
 ## 8주차
 
+<img width="300px" alt="카드뒤집기" src="https://user-images.githubusercontent.com/25981278/156570030-42e48c34-9303-4c10-9c7d-ec27cf197491.png">
+
+<img width="300px" alt="카드뒤집기" src="https://user-images.githubusercontent.com/25981278/156570039-078d21e6-a4ca-4a8f-b824-128c9d7bcdfe.png">
+
+<img width="300px" alt="카드뒤집기" src="https://user-images.githubusercontent.com/25981278/156570058-4556e664-f835-40af-adcd-a14da52fe3de.png">
+
+## 최종
+
 - 카드 뒤집기, 퀴즈 게임
 
 <img width="300px" alt="카드뒤집기" src="https://user-images.githubusercontent.com/25981278/156190918-bed7a30e-a50e-489b-9b08-58f0f2048fbd.png">
